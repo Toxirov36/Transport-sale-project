@@ -1,7 +1,6 @@
-// middlewares/errorHandler.js
 import winston from 'winston';
 
-const logger = winston.createLogger({ /* same as in index.js */ });
+const logger = winston.createLogger({ });
 
 const errorHandler = (err, req, res, next) => {
   const statusCode = err.statusCode || 500;
