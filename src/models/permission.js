@@ -5,7 +5,7 @@ const permissionSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Staff',
     required: true,
-    index: true          // tezroq qidirish uchun
+    index: true
   },
   permissionModel: {
     type: String,
@@ -18,8 +18,8 @@ const permissionSchema = new mongoose.Schema({
     required: true
   }]
 }, {
-  timestamps: true,           // createdAt, updatedAt qo‘shiladi
-  strictPopulate: false       // populate('user') muammosini hal qiladi
+  timestamps: true,           
+  strictPopulate: false       
 });
 
 
